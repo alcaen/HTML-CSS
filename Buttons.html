@@ -18,6 +18,16 @@
     border-radius: 2px;
     cursor: pointer;
     margin-right: 8px;
+    transition: opacity 0.15s;
+    /* This recives the property to modify the transition and the time */
+  }
+
+  .subscribe-button:hover {
+    opacity: 0.8;
+  }
+
+  .subscribe-button:active {
+    opacity: 0.5;
   }
 
   .join-button {
@@ -30,6 +40,17 @@
     width: 62px;
     border-radius: 2px;
     cursor: pointer;
+    transition: background-color 0.15s,
+      color 0.15s;
+  }
+
+  .join-button:hover {
+    background-color: rgb(41, 118, 211);
+    color: white;
+  }
+
+  .join-button:active {
+    opacity: 0.7;
   }
 
   .tweet-button {
@@ -43,6 +64,11 @@
     font-size: 15px;
     cursor: pointer;
     margin-left: 8px;
+    transition: box-shadow 0.15s;
+  }
+
+  .tweet-button:hover {
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.16);
   }
 </style>
 
