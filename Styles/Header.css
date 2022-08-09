@@ -3,6 +3,15 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  background-color: white;
+  border-bottom-width: 1px;
+  border-bottom-color: rgb(228, 228, 228);
+  border-bottom-style: solid;
+  z-index: 100;
 }
 
 .left-section {
@@ -95,8 +104,29 @@
   height: 24px;
 }
 
+.notifications-icon-container {
+  position: relative;
+}
+
 .notifications-icon {
   height: 24px;
+}
+
+.notifications-count {
+  position: absolute;
+  top: 0px;
+  right: -3px;
+  background-color: rgb(198, 0, 0);
+  color: white;
+  font-family: Roboto, Arial;
+  font-size: 9px;
+  font-weight: 500;
+  border-radius: 100%;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-left: 5px;
+  padding-right: 5px;
+
 }
 
 .current-user-picture {
